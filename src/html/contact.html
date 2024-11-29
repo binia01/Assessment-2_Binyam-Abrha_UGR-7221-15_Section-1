@@ -4,17 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TechSphere Solutions</title>
-    <link href="src/css/styles.css" rel="stylesheet">
+    <link href="/src/css/styles.css" rel="stylesheet">
 </head>
 <body>
     <header>
-        <h1><a href="index.html"><small>Innovating the Future of Technology</small><br>
+        <h1><a href="/index.html"><small>Innovating the Future of Technology</small><br>
             <span>TechSphere</span> Solutions</a></h1>
         <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="src/html/about.html">About us</a></li>
-                <li><a href="src/html/contact.html">Contact</a></li>
+            <ul class="unordered-list">
+                <li><a href="/index.html"><button>Home</button></a></li>
+                <li><a href="about.html"><button>About us</button></a></li>
+                <li><a href="contact.html"><button>Contact</button></a></li>
             </ul>
         </nav>
     </header>
@@ -23,7 +23,7 @@
         <div class="contact">
             <div class="article">
                 <h2>Contact</h2>
-                <p>You can find more of my free template designs at my website. For premium commercial designs, you can check out DreamTemplate.com.</p>
+                <p>We’d love to hear from you! Whether you have questions about our services or want to collaborate, feel free to reach out. Visit our website for additional free and premium templates, or explore how we can tailor our solutions to your needs.</p>
             </div>
             <div class="article">
                 <h2>Send us mail</h2>
@@ -46,23 +46,22 @@
                         <textarea id="message" name="message" rows="8" cols="50"></textarea>
                     </li>
                     <li>
-                        <input type="image" alt="Image" name="imageField" id="imageField" src="images/submit.gif" class="send">
-                        <div class="clr"></div>
+                        <button>Submit</button>
                     </li>
                     </ol>
                 </form>
             </div>
         </div>
         <div class="side-bar">
-            <div>
+            <div class="quick-links">
                 <h2>Quick Links</h2>
                 <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="#">About Us</a></li>
-                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="/index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
                 </ul>
             </div>
-            <div>
+            <div class="partners">
                 <h2>Our Partners</h2>
                 <ul>
                     <li><a href="#">Cloud Pioneers</a><br>Leading cloud computing innovators.</li>
@@ -78,18 +77,18 @@
         <div class="base">
             <div class="col-1">
                 <h2>Image Gallery</h2>
-                <div>
-                    <img src="https://via.placeholder.com" alt="Gallery image 1">
-                    <img src="https://via.placeholder.com" alt="Gallery image 2">
-                    <img src="https://via.placeholder.com" alt="Gallery image 3">
-                    <img src="https://via.placeholder.com" alt="Gallery image 4">
-                    <img src="https://via.placeholder.com" alt="Gallery image 5">
-                    <img src="https://via.placeholder.com" alt="Gallery image 6">
+                <div class="images">
+                    <img src="/src/images/pix1.jpg" width="66" height="66" alt="">
+                    <img src="/src/images/pix2.jpg" width="66" height="66" alt="">
+                    <img src="/src/images/pix3.jpg" width="66" height="66" alt="">
+                    <img src="/src/images/pix4.jpg" width="66" height="66" alt="">
+                    <img src="/src/images/pix5.jpg" width="66" height="66" alt="">
+                    <img src="/src/images/pix6.jpg" width="66" height="66" alt="">
                 </div>    
             </div>
             <div class="col-2">
                 <h2>About Us</h2>
-                <p><img src="https://via.placeholder.com" alt="About us" style="float:left; margin-right:10px;">TechSphere Solutions is a leader in delivering innovative technology services that empower businesses to succeed in the digital landscape. From custom software to AI-driven insights, we provide solutions that make a difference.</p>
+                <p><img src="/src/images/white.jpg" width="66" height="66" alt="About us" style="float:left; margin-right:10px;">TechSphere Solutions is a leader in delivering innovative technology services that empower businesses to succeed in the digital landscape. From custom software to AI-driven insights, we provide solutions that make a difference.</p>
                 <p><a href="#">Learn more...</a></p>
             </div>
             <div class="col-3">
@@ -102,12 +101,14 @@
                 </ul>
             </div>
         </div>
-        <p class="lf">&copy; 2024 TechSphere Solutions. Designed by <a href="http://www.bluewebtemplates.com/">Blue Web Templates</a>.</p>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="src/html/about.html">About us</a></li>
-            <li><a href="src/html/contact.html">Contact</a></li>
-        </ul>
+        <div class="copyright">
+            <p class="lf">&copy; 2024 TechSphere Solutions. Designed by <a href="http://www.bluewebtemplates.com/">Blue Web Templates</a>.</p>
+            <ul>
+                <li><a href="/index.html">Home</a></li>
+                <li><a href="about.html">About us</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
     </footer>
 </body>
 </html>
