@@ -1,44 +1,229 @@
-body{
+body {
     color: #5f5f5f;
     margin: 0;
     padding: 0;
     font: normal 12px/1.8em Arial, Helvetica, sans-serif;
-    width: 100%;  
-}
-header{
-    background-color:  #293129;
-} 
-html, .main { 
-    padding:0; 
-    margin:0; 
-    background-color:#fff;
+    width: 100%;
+    box-sizing: border-box;
 }
 
-h1 {
-     margin:0; 
-     padding:34px 0; 
-     color:#fff; 
-     font:bold 60px/1.2em Arial, Helvetica, sans-serif;
+* {
+    box-sizing: inherit;
 }
-h1 a, h1 a:hover { color:#fff; text-decoration:none;}
-h1 span { color:#db7835;}
-h1 small { padding-left:230px; font:normal 16px/1.2em Arial, Helvetica, sans-serif;}
-h2 { font:bold 24px Arial, Helvetica, sans-serif; color:#73b40e; padding:8px 0; margin:8px 0;}
-p { margin:8px 0; padding:0 0 8px 0; font:normal 12px/1.8em Arial, Helvetica, sans-serif;}
-a { color:#73b40e; text-decoration:none;}
-.clr { clear:both; padding:0; margin:0; width:100%; font-size:0px; line-height:0px;}
-a.red { color:#db7835;}
 
-/* .header-nav{
+.container {
+    margin: 0 auto;
+    padding: 0 20px; 
+    max-width: 1200px; 
+}
+
+header {
     display: flex;
     flex-direction: column;
-} */
-.unordered-list{
-    display: block;
+    background-color: #293129;
+    align-items: center;
+}
+
+.unordered-list {
+    display: flex;
     list-style-type: none;
-    padding: 0;
+    padding: 20px 20px;
     margin-top: 0;
     gap: 20px;
 }
 
+.unordered-list button {
+    background-color: #73b40e;
+    color: #ffff;
+    padding: 10px 10px;
+    border: none;
+    border-radius: 5px;
+}
 
+.unordered-list button:hover,
+.unordered-list button:active {
+    background-color: #db7835;
+    cursor: pointer;
+}
+
+html,
+.main {
+    padding: 0;
+    margin: 0;
+    background-color: #fff;
+}
+
+h1 {
+    margin: 0;
+    padding: 34px 0;
+    color: #fff;
+    font: bold 60px/1.2em Arial, Helvetica, sans-serif;
+}
+
+h1 a,
+h1 a:hover {
+    color: #fff;
+    text-decoration: none;
+}
+
+h1 span {
+    color: #db7835;
+}
+
+h1 small {
+    padding-left: 230px;
+    font: normal 16px/1.2em Arial, Helvetica, sans-serif;
+}
+
+h2 {
+    font: bold 24px Arial, Helvetica, sans-serif;
+    color: #73b40e;
+    padding: 8px 0;
+    margin: 8px 0;
+}
+
+p {
+    margin: 8px 0;
+    padding: 0 0 8px 0;
+    font: normal 12px/1.8em Arial, Helvetica, sans-serif;
+}
+
+a {
+    color: #73b40e;
+    text-decoration: none;
+}
+
+.clr {
+    clear: both;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    font-size: 0px;
+    line-height: 0px;
+}
+
+a.red {
+    color: #db7835;
+}
+
+.header-nav {
+    display: flex;
+}
+
+main {
+    display: flex;
+    background-color: #fff;
+    justify-content: center;
+    padding: 20px 0; 
+    gap: 30px;
+}
+
+
+.main-content {
+    display: grid;
+    grid-template-rows: 400px 400px;
+    grid-template-columns: 300px 300px;
+    row-gap: 50px;
+    column-gap: 50px;
+}
+.content, .contact{
+    width: 650px;
+    flex-wrap: wrap;
+}
+.quick-links ul, .partners ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    color: #959595;
+}
+.quick-links li, .partners li{
+    margin: 0;
+}
+.quick-links li{
+    padding: 4px 0;
+}
+.partners li{
+    padding: 4px 0 8px;
+}
+.quick-links li a, .partners li a{
+    color: #5f5f5f;
+    text-decoration: none;
+}
+
+.base {
+    display: grid;
+    grid-template-rows: 230px;
+    grid-template-columns: 300px 300px 300px;
+    background-color: #222922;
+    color: #fff;
+    justify-content: center;
+    column-gap: 30px;
+    padding: 20px; 
+}
+
+.images {
+    display: grid;
+    grid-template-rows: 66px 66px;
+    grid-template-columns: 66px 66px 66px;
+    gap: 10px;
+}
+
+.copyright {
+    display: flex;
+    justify-content: space-around;
+    background-color: #222222;
+    border-top: 1px solid #505050;
+    padding: 16px 0;
+    color: #fff;
+}
+
+.copyright > ul {
+    display: flex;
+    list-style-type: none;
+    gap: 20px;
+    margin: 0; 
+    padding: 0;
+}
+
+.copyright > ul > li > a {
+    color: #fff;
+}
+
+.copyright > ul > li > a:hover,
+.copyright > ul > li > a:active {
+    color: #73b40e;
+}
+
+ol { 
+    list-style:none;
+}
+ol li { 
+    display:block; clear:both;
+}
+ol li label { 
+    display:block; 
+    margin:0; 
+    padding:16px 0 0 0;
+}
+ol li input.text { 
+    width:480px; 
+    border:1px solid #c0c0c0; 
+    margin:2px 0; 
+    padding:5px 2px; 
+    height:25px; 
+    background:#fff;
+}
+ol li textarea { 
+    width:480px; 
+    border:1px solid #c0c0c0; 
+    margin:2px 0; 
+    padding:2px; 
+    background:#fff;
+}
+ol li button{
+    background-color: darkgray;
+    color: black;
+    padding: 10px 10px;
+    border: none;
+    border-radius: 5px;
+}
